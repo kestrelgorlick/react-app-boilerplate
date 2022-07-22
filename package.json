@@ -1,0 +1,57 @@
+{
+  "name": "react-app-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:build": "webpack-dev-server --hot --open",
+    "dev:start": "nodemon ./server/index.js",
+    "dev": "start npm run dev:build && start npm run dev:start",
+    "start": "node ./server/index.js",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kestrelgorlick/react-app-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kestrelgorlick/react-app-boilerplate/issues"
+  },
+  "homepage": "https://github.com/kestrelgorlick/react-app-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "nodemon": "^2.0.19",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  },
+  "dependencies": {
+    "@auth0/auth0-react": "^1.10.2",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.7",
+    "@reduxjs/toolkit": "^1.8.3",
+    "auth0-js": "^9.19.0",
+    "css-loader": "^6.7.1",
+    "express": "^4.18.1",
+    "file-loader": "^6.2.0",
+    "history": "^5.3.0",
+    "pg": "^8.7.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.2.0",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3",
+    "sequelize": "^6.21.2",
+    "style-loader": "^3.3.1"
+  }
+}
